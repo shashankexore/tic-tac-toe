@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #121212; /* Dark background */
+    text-align: center;
+    color: #ffffff; /* White text for better contrast */
+}
+
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1.5rem rgba(0, 255, 255, 0.7); /* Neon cyan glow */
+    font-size: 8vmin;
+    color: #ff77ff; /* Neon pink text */
+    background-color: #222; /* Dark box background */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 2rem rgba(255, 77, 255, 0.9); /* Glow effect on hover */
+}
+
+#reset-btn, #new-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #333; /* Dark button background */
+    color: #0ff; /* Neon cyan text */
+    border-radius: 1rem;
+    border: 1px solid #0ff; /* Cyan border */
+    box-shadow: 0 0 1rem rgba(0, 255, 255, 0.7); /* Neon button glow */
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+#reset-btn:hover, #new-btn:hover {
+    background-color: #0ff; /* Neon cyan hover */
+    color: #121212; /* Dark text on hover */
+    transform: scale(1.1); /* Slight scaling on hover */
+}
+
+#msg {
+    color: #0ff; /* Neon cyan text for message */
+    font-size: 5vmin;
+    text-shadow: 0 0 1rem rgba(0, 255, 255, 0.7); /* Glow effect for message */
+}
+
+.msg-container {
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.hide {
+    display: none;
+}
